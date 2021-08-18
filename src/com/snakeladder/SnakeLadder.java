@@ -10,12 +10,14 @@ public class SnakeLadder {
 	public static void main(String[] args) {
 	System.out.println("Welcome to Snake & Ladder");
 	int pos = 0;
+	int dicecount = 0;
 	Random rand = new Random();
 	
 	while(pos!=100) {
 		
 		//Dice gives 1-6 random output
 		int dice = rand.nextInt(6) + 1;
+		dicecount++;
 		System.out.println("Dice Number: "+dice);
 		
 		//Select random option from 1-3
@@ -39,6 +41,8 @@ public class SnakeLadder {
 		}
 		
 		
-	}System.out.println("Congratulations you WIN!!!");
+	}
+	System.out.println("Congratulations you WIN!!!");
+	System.out.println("Dice was rolled "+dicecount+" times.");
 	}
 }
