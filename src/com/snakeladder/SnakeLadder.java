@@ -12,7 +12,7 @@ public class SnakeLadder {
 	int pos = 0;
 	Random rand = new Random();
 	
-	//while(pos<=100) {
+	while(pos<=100) {
 		
 		//Dice gives 1-6 random output
 		int dice = rand.nextInt(6) + 1;
@@ -32,7 +32,7 @@ public class SnakeLadder {
 			pos=pos-dice;
 			System.out.println("SNAKE! Move back by "+dice+" steps. Final position :" +pos );
 			break;
-	//	}
+		}
 		
 	}
 	}
